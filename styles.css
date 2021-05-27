@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
 
+:root{
+    --primary-color: #63A8FF;
+}
+
+hr{
+    margin: 2.5rem 0rem;
+}
 body{
     font-family: 'Roboto Mono', monospace;
 }
+
+/** containers **/
 
 .container{
     padding-left: 1rem;
@@ -12,4 +21,33 @@ body{
 .container-center{
     max-width: 600px;
     margin: auto;
+}
+
+/** links **/
+
+.link{
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.link-primary{
+    background-color: var(--primary-color);
+}
+
+.link-secondary{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/**lists**/
+
+.list-non-bullet{
+    list-style: none;
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
 }
